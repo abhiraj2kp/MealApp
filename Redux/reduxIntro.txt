@@ -1,0 +1,22 @@
+setup
+1. install redux
+2. need a lib. that helps us to connect redux to react native i.e react redux.
+3. Redux is the best way to managing state in application. it store the state of application
+    into one perticular place. that perticular place is known as store.
+4. So how can we modify the state ?. the state can be modified by action. however action does't 
+    modified the state directly. the action must go through to the Reducer to modified the store
+5. the reducer is nothing just a function. that recieves an action, modified a state to give us a
+    new state . (Note the state is read only).
+5. However action goest to reducer? by something called Dispatcher. i.e action is send by someone to reducer.
+    someone can be a onpress. (on onPress i.e we dispact an action which will goes to the reducer) 
+6. store needs a reducer which will access it and modified it.  
+7. Connecting a store to our RN App known as Provider.            
+/**
+ * Store - holds our state - THERE IS ONLY ONE STATE 
+ * Action - State can be modified using actions - SIMPLE OBJECTS 
+ * Dispatcher - Action needs to be sent by someone - known as dispatching an action
+ * Reducer - receives the action and modifies the state to give us a new state 
+ *  - pure functions 
+ *  - only mandatory argument is the 'type' 
+ * Subscriber - listens for state change to update the ui  
+ */
